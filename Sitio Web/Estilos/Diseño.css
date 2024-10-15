@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --bg-color:  #D7F719;
+    --second-bg-color: #2DA8B5;
+    --text-color: #ffff;
+    --main-color: #da6004;
+    --second-color:#112e42;
+}
+
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--second-color);
+    color: var(--text-color);
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+span{
+    color: var(--second-color);
+    }
+    
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background-image: url('https://pbs.twimg.com/media/FZ4rGMlUUAECAK8.jpg:large');
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header .sticky{
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
+.logo{
+    font-size: 2.5rem;
+    color: var(--main-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a{
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: var(--bg-color);
+}
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+.inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://img.freepik.com/vector-gratis/papel-tapiz-plano-estilo-comic_23-2148818640.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home-img img {
+    width: 30vw;
+    animation: floatiImage 4s ease-in-out infinite;
+}
+
+/*Codigo para hacer que la imagen flote*/
+@keyframes floatiImage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+
+.home-content h3 {
+font-size: 3.2rem;
+font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+
+.inicio p{
+    font-size: 1.6rem;
+}
+
+.home-content h1{
+    font-size: 4.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+/*Sobre mi*/
+
+.SobreMi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-image: url('https://pbs.twimg.com/media/FZ4rGMlUUAECAK8.jpg:large');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about-img img{
+    width: 35vw;
+    clip-path: circle(50%);
+}
+
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+} 
+
+.about-content h2{
+    text-align: center;
+    line-height: 1.2;
+}
+
+.about-content h3{
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+
+}
+
+/*Seccion pregunas frecuentes*/
+
+.Preguntas{
+    font-size: 1.5rem;
+}
+
+.Preguntas img{
+    width: 300px;
+    height: 350px;
+    float: right;
+    
+}
+
+video{
+    width: fit-content;
+    border-radius: 10%;
+}
+
+.Preguntas .SubPregunta {
+    text-decoration: underline;
+    color: var(--second-color);
+}
+
+/*Habilidades*/
+
+.Habilidades{
+    min-height: auto;
+    padding-bottom: 7rem;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/25954a58-0198-4aff-81c3-ed57fc6df8f5/dd2ql9u-50cebcfd-522c-4ff0-90d8-80fb27e1938c.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI1OTU0YTU4LTAxOTgtNGFmZi04MWMzLWVkNTdmYzZkZjhmNVwvZGQycWw5dS01MGNlYmNmZC01MjJjLTRmZjAtOTBkOC04MGZiMjdlMTkzOGMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.9kZGfhWSswZltDCv0Of6ZBvWXqHTnEOMcHedT4ET-Z4');
+    background-repeat: no-repeat;
+    background-size:cover ;
+   }
+    
+   
+   .Habilidades .skills-row{
+       display: flex;
+       flex-wrap: wrap;
+       gap: 5rem;
+   }
+   
+   .skills-row .skills-column{
+       right: -5;
+       justify-content: space-between;
+   }
+   
+   .skills-column .title{
+       font-size: 2.5rem;
+       margin: 0 0 1.5rem;
+
+   }
+   
+   .skills-box .skills-content{
+       position: relative;
+       border: .2rem solid var(--second-bg-color);
+       border-radius: .6rem;
+       padding: .5rem 1.5rem;
+   }
+   
+   
+   .skills-content .progress{
+       padding: 1rem 0;
+       
+   }
+   
+   .skills-content .progress h3{
+      font-size: 1.7rem;
+      display: flex;
+      justify-content: space-between;
+   
+   }
+   
+   .skills-content .progress h3 span{
+     color: #da6004;
+   }
+   
+   
+   /*Codigo para hacer el borde de la barra*/
+   .skills-content .progress .bar{
+       height: 2.5rem;
+       border-radius: .6rem;
+       border: .2rem solid #D7F719;
+       padding: .5rem;
+       margin: 1rem 0;
+   }
+   
+   .skills-content .progress .bar span{
+      display: block;
+      height: 100%;
+      border-radius: .3rem;
+      background-color: aqua;
+   }
+   
+   .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span {
+     width: 90%;
+   } 
+   
+   .skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
+       width: 85%;
+     }
+   
+     .skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
+       width: 80%;
+     }  
+   
+     .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
+       width: 48%;
+     }
+     
+     .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
+       width: 95%;
+     } 
+     
+     .skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
+         width: 93%;
+       }
+     
+       .skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
+         width: 89%;
+       }  
+     
+      .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
+      width: 80%;
+}    
+
+
+/*Agradecimiento*/
+
+.Agradecimiento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:2rem;
+    background-image: url('https://img.freepik.com/foto-gratis/puesta-sol-siluetas-arboles-montanas-ia-generativa_169016-29371.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 6rem;
+}
+
+.gracias-img {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gracias-img img {
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid var(--main-color);
+}
+
+.gracias-img .circle-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid var(--second-color);
+    border-bottom: .2rem solid var(--second-color);
+    border-left: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
+    justify-content: center;
+
+    
+}
+
+.agradecimiento-content{
+    text-align: center;
+}
+
+.agradecimiento-content p{
+    font-size: 2.6rem;
+    margin: 2rem 0rem;
+
+}
+
+
+/*Footer*/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background-image: url('https://pbs.twimg.com/media/FZ4rGMlUUAECAK8.jpg:large');
+
+}
+
+.footer-text {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.footer-text .versiculo{
+    color: #da6004;
+    text-decoration: underline;
+}
+
+.footer-iconTop a{
+display: inline-flex;
+justify-content: center;
+align-items: center;
+padding: .8rem;
+background: var(--second-color);
+border-radius: .8rem;
+transition: .5s case
+;
+}
+
+.footer-iconTop a:hover{
+    box-shadow:  0 0 1rem var(--main-color);
+}
+
+.footer-iconTop a i{
+    font-size: 2.4rem;
+    color: var(--second-bg-color);
+}
+
+
+
+
